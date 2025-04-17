@@ -1,0 +1,54 @@
+body {
+    transition: background-color 0.4s ease;
+    background-color: rgb(42, 136, 223); /* ცისფერი */
+}
+
+body.scrolled {
+    background-color: white;
+}
+
+/*baneri*/
+.baner {
+    width: 100%;
+}
+
+/*nav*/
+#footer {
+    background-color: rgb(62, 61, 61); /* ცისფერი */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* nav დამალულია */
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: none; /* დამალულია დაწყებისას */
+    transition: all 0.3s ease; /* სმარტი შედეგი */
+}
+
+/* როცა nav გამოჩნდება */
+#footer.show {
+    display: block; /* გამოჩნდება */
+}
+
+/*icon*/
+.icon {
+    width: 7.5%;
+    color: #fff;
+}
+
+.icon:hover {
+    color: orange;
+}
+
+
