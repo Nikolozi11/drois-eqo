@@ -1,4 +1,5 @@
-body,html {
+body,
+html {
   height: 100%;
   margin: 0;
 }
@@ -168,6 +169,7 @@ body.scrolled {
   color: #cce5ff;
 }
 
+/*დონატელო*/
 .wesdeba {
   margin: 80px;
 }
@@ -198,4 +200,327 @@ body.scrolled {
 
 .modern-button:active {
   transform: scale(0.98);
+}
+
+/*siaxle*/
+/* სიახლეების სტილი */
+.news-section {
+  margin: 20px;
+  margin-top: 70px;
+  background-color: #f5f5f2;
+  padding: 50px 20px;
+  font-family: 'Georgia', serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.news-card {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #444;
+  transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 20px;
+}
+
+.news-date {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.news-content h3 {
+  margin: 10px 0;
+  color: #111;
+  font-size: 1.3rem;
+}
+
+.news-content p {
+  color: #333;
+  font-size: 1rem;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007b88;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+  transition: border 0.3s;
+}
+
+.read-more:hover {
+  border-color: #007b88;
+}
+
+/*ruka*/
+.mpcon {
+  margin: 50px;
+  width: 80%;
+  height: 80%;
+}
+
+.map {
+  width: 70%;
+  height: 70%;
+  margin-left: 10%;
+  justify-items: center;
+}
+
+/*info*/
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #5a3e1b;
+  margin-bottom: 1.5rem;
+}
+
+.infsa {
+  margin: 20px;
+  margin-top: 140px;
+}
+
+.info-cards {
+  padding: 2rem;
+  background: #f4f0e6;
+  font-family: "Noto Serif Georgian", serif;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+    align-items: start;
+  align-items: start;
+  grid-auto-rows: min-content;
+}
+
+.info-card {
+  background: #fff7ec;
+  border-left: 5px solid rgb(42, 136, 223);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(42, 136, 223);
+  position: relative;
+}
+
+.info-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: rgb(42, 136, 223);
+}
+
+.info-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.more {
+  display: none;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.info-card button {
+  background-color: rgb(42, 136, 223);
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.3s;
+}
+
+.info-card button:hover {
+  background-color: rgb(7, 77, 142);
+}
+
+.more {
+  display: none;
+}
+
+.more.show {
+  display: block;
+}
+/*galerea*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 20px;
+    margin-top: 150px;
+  }
+  .gallery img {
+    width: 200px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  /* ლაითბოქსი */
+  #lightbox {
+    display: none;
+    position: fixed;
+    top:0; left:0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  #lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 0 30px white;
+  }
+
+/*ვიდეო*/
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+     font-family: Arial, sans-serif;
+    margin: 20px;
+    margin-top: 150px;
+    background: #f9f9f9;
+  }
+  .video-thumb {
+    width: 200px;
+    height: 120px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    object-fit: cover;
+  }
+  .video-thumb:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+  }
+  /* ფულსკრინის ვიდეო */
+  #video-popup {
+    display: none;
+    position: fixed;
+    top:0; left:0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+  #video-popup video {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 0 30px white;
+  }
+  #popup-close {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10001;
+  }
+
+  /*kontaqt*/
+  .contact-section {
+  padding: 50px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.contact-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-section h2 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px;
+  font-size: 1rem;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #1a252f;
+}
+
+.contact-info {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #333;
 }

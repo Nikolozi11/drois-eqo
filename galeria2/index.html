@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <script src="../func.js"></script>
+    <script src="../js/galeri2.js" defer></script>
+    <script src="../func.js" defer></script>
     <link rel="stylesheet" href="../disain.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="x-icon" href="img/logo (2).png">
+    <link rel="shortcut icon" type="x-icon" href="../img/logo (2).png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <title>დროის ექო</title>
 </head>
@@ -45,6 +46,17 @@
             </ul>
         </div>
     </nav>
+
+    <div class="video-gallery">
+  <video class="video-thumb" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" muted preload="metadata" poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217" ></video>
+  <video class="video-thumb" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/bee.webm" muted preload="metadata" poster="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Black_and_Yellow_Bumblebee_in_North_Carolina.jpg/320px-Black_and_Yellow_Bumblebee_in_North_Carolina.jpg" ></video>
+  <video class="video-thumb" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/tank.webm" muted preload="metadata" poster="https://upload.wikimedia.org/wikipedia/commons/3/35/M1A1_Abrams_Tank_2001.jpg" ></video>
+</div>
+
+<div id="video-popup">
+  <span id="popup-close">&times;</span>
+  <video controls autoplay></video>
+</div>
 
     <!--footer-->
     <footer class="footer">
