@@ -1,19 +1,16 @@
-window.addEventListener('scroll', () => {
-    const banner = document.getElementById('banner');
-    const bannerBottom = banner.getBoundingClientRect().bottom;
-
-    if (bannerBottom <= 0) {
-        document.body.classList.add('scrolled');
-    } else {
-        document.body.classList.remove('scrolled');
-    }
-});
+//ნავიგაციური დაფა
+function toggleMenu() {
+    document.getElementById("sideMenu").classList.toggle("active");
+}
 
 
 
 
 
 
+
+
+//nav mozraobaw
 document.addEventListener("DOMContentLoaded", function () {
     const footer = document.getElementById('footer');
     let lastScrollTop = 0;
@@ -38,3 +35,5 @@ document.addEventListener("DOMContentLoaded", function () {
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     });
 });
+
+

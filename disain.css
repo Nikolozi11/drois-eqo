@@ -1,54 +1,201 @@
+body,html {
+  height: 100%;
+  margin: 0;
+}
+
 body {
-    transition: background-color 0.4s ease;
-    background-color: rgb(42, 136, 223); /* ცისფერი */
+  transition: background-color 0.4s ease;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* ცისფერი */
 }
 
 body.scrolled {
-    background-color: white;
+  background-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /*baneri*/
 .baner {
-    width: 100%;
+  margin-top: 50px;
+  width: 100%;
 }
 
 /*nav*/
-#footer {
-    background-color: rgb(62, 61, 61); /* ცისფერი */
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+.a {
+  text-decoration: none;
+  color: white;
 }
 
-/* nav დამალულია */
-#footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    display: none; /* დამალულია დაწყებისას */
-    transition: all 0.3s ease; /* სმარტი შედეგი */
+/* Burger Button */
+.burger {
+  font-size: 30px;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(42, 136, 223);
+  /* შეგიძლია შეცვალო */
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
 }
 
-/* როცა nav გამოჩნდება */
-#footer.show {
-    display: block; /* გამოჩნდება */
+/* Menu Styling */
+.menu {
+  margin-top: -20px;
+  position: fixed;
+  top: 0;
+  left: -260px;
+  height: 100vh;
+  width: 260px;
+  background: rgb(42, 136, 223);
+  transition: left 0.3s ease;
+  padding-top: 80px;
+  z-index: 1000;
 }
 
-/*icon*/
-.icon {
-    width: 7.5%;
-    color: #fff;
+.menu.active {
+  left: 0;
 }
 
-.icon:hover {
-    color: orange;
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  list-style: none;
+  padding: 15px 20px;
+
+  display: flex;
+  align-items: center;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background: rgb(7, 77, 142);
+}
+
+.menu li i {
+  margin-right: 15px;
 }
 
 
+/*footer*/
+.footer {
+  margin-top: 50px;
+  background-color: rgb(42, 136, 223);
+  color: white;
+  padding: 40px 50px;
+  font-family: "Georgia", serif;
+  border-top: 4px solid white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex: 1 1 220px;
+}
+
+.crest {
+  width: 90px;
+}
+
+.family-name {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.friends-links {
+  flex: 1 1 220px;
+}
+
+.friends-links h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.friends-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.friends-links li {
+  margin-bottom: 10px;
+}
+
+.friends-links a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-style: italic;
+  font-size: 16px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.friends-links a:hover,
+.friends-links a:focus {
+  border-color: white;
+  color: #cce5ff;
+}
+
+.wesdeba {
+  margin: 80px;
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  /* ჰორიზონტალურად */
+}
+
+.modern-button {
+  margin-top: 100px;
+  padding: 12px 24px;
+  background-color: rgb(42, 136, 223);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modern-button:hover {
+  background-color: rgb(7, 77, 142);
+  transform: scale(1.05);
+}
+
+.modern-button:active {
+  transform: scale(0.98);
+}
